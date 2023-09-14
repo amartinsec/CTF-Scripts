@@ -14,10 +14,10 @@ echo -e "\n\n🍪${RED}Rapid Cookie Theft${ENDCOLOR} 🍪"
 
 ip=$(/sbin/ip -o -4 addr list $interface | awk '{print $4}' | cut -d/ -f1)
 
-if [ $ip == "" ];
+if [[ $ip == "" ]];
 then
-   echo "${RED}[-]${ENDCOLOR} Edit script with correct interface"
-   echo "${RED}[-]${ENDCOLOR} Exiting..."
+   echo -e "${RED}[-]${ENDCOLOR} Edit script with correct interface"
+   echo -e "${RED}[-]${ENDCOLOR} Exiting...\n"
    exit
 fi
 echo -e "${GREEN}[+] ${ENDCOLOR}Listening interface: ${UNDERLINE}$interface${ENDCOLOR} with IP: ${UNDERLINE}$ip${ENDCOLOR}"
